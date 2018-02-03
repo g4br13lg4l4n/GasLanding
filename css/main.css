@@ -13,6 +13,8 @@ a {
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box; 
 }
 
 #home {
@@ -51,7 +53,8 @@ a {
   font-size: 40px;
   color: #FFFFFF;
   letter-spacing: 1.04px;
-  width: 550px;
+  max-width: 550px;
+  width: 100%;
 }
 
 .content-main .main-text p {
@@ -59,7 +62,8 @@ a {
   font-size: 25px;
   color: #FFFFFF;
   letter-spacing: 0.65px;
-  width: 520px;
+  max-width: 520px;
+  width: 100%;
   margin: 40px 0;
 }
 
@@ -130,13 +134,19 @@ a {
   background-size: cover;
 }
 
+.img-contacto img {
+  max-width: 550px;
+  width: 100%;
+}
+
 .content-contacto {
   padding: 80px 0;
 }
 
 .text-contacto h3 {
   margin-bottom: 80px;
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
   font-family: LucidaGrande;
   font-size: 40px;
   color: #3F3F3F;
@@ -148,7 +158,8 @@ a {
   font-size: 22px;
   color: #3F3F3F;
   letter-spacing: 0.68px;
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
 }
 
 #footer {
@@ -174,4 +185,88 @@ a {
   letter-spacing: .8px;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .container {
+    padding: 0 80px;
+  }
+  .text-contacto, .img-contacto, .main-text, .main-img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .content-main .main-text h1 {
+    font-size: 28px;
+  }
+  .content-main .main-text p {
+    font-size: 20px;
+  }
+  .google-play {
+    padding: 12px 10px;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .copy {
+    font-size: 14px;
+  }
+  .logo-head img, #footer div img{
+    width: 40px;
+  }
+  .container {
+    padding: 0 30px;
+  }
+  .content-main .main-text h1 {
+    font-size: 32px;
+  }
+  .content-main .main-text p {
+    font-size: 20px;
+  }
+  .google-play{
+    margin: 0 auto;
+    padding: 12px 0px 12px 22px;
+    margin-bottom: 20px;
+  }
+  #funcion {
+    margin-top: 60px;
+  }
+  #funcion .container h3, .text-contacto h3 {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  .nav-head ul li a, .nav-footer ul li a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-funcion img {
+    width: 60%;
+  }
+  #funcion .container h3, .text-contacto h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .card-funcion p{
+    font-size: 24px;
+  }
+  .nav-head ul li, .nav-footer ul li {
+      margin: 0 8px;
+  }
+  .nav-head ul li a, .nav-footer ul li a {
+    font-size: 14px;
+  }
+  .content-main .main-text h1 {
+    font-size: 24px;
+  }
+  .content-main .main-text p {
+    font-size: 17px;
+    margin: 30px 0;
+  }
+  .google-play {
+    font-size: 24px;
+    padding: 9px 0px 9px 20px;
+  }
+  
+}
 

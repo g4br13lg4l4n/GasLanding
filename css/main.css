@@ -157,4 +157,21 @@ a {
   text-align: center;
 }
 
+.nav-footer {
+  margin: 20px 0;
+}
+
+.nav-footer ul li a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    font-family: SourceSansPro-Regular; 
+    letter-spacing: .8px;
+}
+
+.copy {
+  color: #8F8F8F;
+  font-family: SourceSansPro-Regular;
+  letter-spacing: .8px;
+}
+
 
